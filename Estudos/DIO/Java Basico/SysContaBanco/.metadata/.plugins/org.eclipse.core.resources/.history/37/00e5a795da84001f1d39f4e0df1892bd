@@ -1,0 +1,14 @@
+package conta;
+
+public class ContaTerminal {
+ public static void main(String[] args) {
+	int numero;
+	String agencia;
+	String nomecliente;
+	double saldo;
+	
+	System.out.println("Por favor, digite o número da Agência!");
+	
+}
+
+}

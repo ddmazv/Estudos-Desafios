@@ -1,0 +1,38 @@
+package controledefluxo;
+
+import java.util.Scanner;
+
+public class Contador {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite o inicio da contagem");
+		int parametro1 = scan.nextInt();
+		
+		System.out.println("Digite o limite da contagem");
+		int parametro2 = scan.nextInt();
+		
+		try {
+		contar(parametro1, parametro2);
+		}catch (ParametrosInvalidosException e) {
+			ParametrosInvalidosException.class.toString();
+			System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+		}
+		
+	}
+
+	static void contar(int parametro1, int parametro2) throws ParametrosInvalidosException {
+		
+		if(parametro1 > parametro2) {
+		throw new ParametrosInvalidosException();
+		}else {
+		int contagem = parametro1 - parametro2;
+		for(int i = 0; i<contagem;i++){
+			
+		}
+		}
+	}
+	
+}

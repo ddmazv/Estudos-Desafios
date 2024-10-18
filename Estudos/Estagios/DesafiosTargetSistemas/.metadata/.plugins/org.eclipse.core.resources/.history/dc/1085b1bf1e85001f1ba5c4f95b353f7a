@@ -1,0 +1,57 @@
+package desafios.stringverify;
+
+import java.awt.PageAttributes.PrintQualityType;
+import java.util.ArrayList;
+
+public class StringVerify {
+	ArrayList<Character> charactersmach;
+	int qtdchars;
+
+	public String containAChar(String text, String verifychar) {
+		char cutUpper = verifychar.toUpperCase().charAt(0);
+		char cutLower = verifychar.toLowerCase().charAt(0);
+		String textLower = text.toLowerCase();
+		char[] charactersArray = new char[text.length()];
+		
+		charactersmach = new ArrayList<Character>();
+		textLower.getChars(0, textLower.length(), charactersArray, 0);
+		
+		
+
+		
+		for (char character : charactersArray) {
+			if (character == cutLower) {
+				charactersmach.add(character);
+			}
+
+		}
+		qtdchars = charactersmach.size();
+		if (qtdchars < 1) {
+			System.out.println("caractere não encontrado");
+		}
+		return charactersmach.toString();
+	}
+
+	
+	
+	
+
+	public int getQtdChars() {
+		return qtdchars;
+	}
+	
+public static void main(String[] args) {
+	System.out.println("Verifica");
+	//             0123456789
+	String text = "ababababab";
+	String textLower = text.toLowerCase();
+	String verifyText = "a";
+	int qtdchars =0;
+	for(int i = textLower.indexOf(verifyText);i > -1; i = textLower.indexOf(verifyText,i+1), qtdchars++) 
+	{
+		System.out.println("i:"+i);
+	};	
+	//System.out.println("Valor "+ textLower.indexOf(verifyText,2+1));
+	System.out.println("Quantidade de ocorrencias no texto "+text+" foi: "+qtdchars);
+}	
+}

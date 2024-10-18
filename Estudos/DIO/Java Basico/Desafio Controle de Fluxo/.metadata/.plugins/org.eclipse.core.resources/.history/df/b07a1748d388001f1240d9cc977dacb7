@@ -1,0 +1,11 @@
+package controledefluxo;
+
+public class ParametrosInvalidosException extends Exception {
+
+ @Override
+public String toString() {
+	// TODO Auto-generated method stub
+	 System.out.println("O segundo parâmetro deve ser maior que o primeiro");
+	return super.toString();
+}
+}
