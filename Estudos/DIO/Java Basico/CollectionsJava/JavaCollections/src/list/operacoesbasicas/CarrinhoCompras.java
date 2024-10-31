@@ -32,6 +32,10 @@ public double calcularValorTotal() {
 	return total;
 }
 
+public int exibirQtdItens() {
+	return listaitems.size();
+}
+
 public void exibirItens() {
 	System.out.println(listaitems);
 }
