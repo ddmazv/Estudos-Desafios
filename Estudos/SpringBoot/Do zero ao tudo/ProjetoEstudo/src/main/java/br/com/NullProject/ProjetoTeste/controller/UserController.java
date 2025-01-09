@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import jakarta.transaction.Transactional;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin
 public class UserController {
 
 	@Autowired
@@ -31,6 +33,13 @@ public class UserController {
 		return services.createUser(dto, uri);
 	}
 	
+	/*
+	@PostMapping
+	@Transactional
+	public void createUser(@RequestBody UserDto dto){
+		 services.createUser(dto);
+	}
+	*/
 	@GetMapping
 	public ResponseEntity<List<UserDto>> listAllUsers(){
 		return services.listAllUsers();

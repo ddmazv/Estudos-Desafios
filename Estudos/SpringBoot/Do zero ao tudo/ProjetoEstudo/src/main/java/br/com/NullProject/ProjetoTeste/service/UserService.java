@@ -35,6 +35,13 @@ public class UserService  {
 		return ResponseEntity.created(uri).body(new UserDto(user));
 	}
 	 
+	/*
+	public void createUser(@RequestBody UserDto dto){
+		UserEntity user = new UserEntity(dto);
+		repository.save(user);
+	
+	}
+	*/
 	public ResponseEntity<UserDto> updateUser(UserDto dto){
 		 UserEntity user = new UserEntity(dto);
 		 repository.save(user);
