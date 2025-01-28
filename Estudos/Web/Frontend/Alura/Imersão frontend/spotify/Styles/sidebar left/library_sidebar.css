@@ -1,0 +1,85 @@
+.sidebar__library{
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 12px 10px 600px 25px;
+    width: 300;
+    position: relative;
+    top: 10px;
+
+}
+
+.sidebar__library .library__tittle a{
+    color: #b3b3b3;
+    text-decoration: none;
+  
+    font-weight: 580;
+    font-size: 20px;
+    font-family: "DM Sans", sans-serif;
+    
+    
+}
+
+.sidebar__library .library__tittle__plus__icons a{
+    color: #b3b3b3;
+    text-decoration: none;
+    display: grid;
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -17px;
+}
+
+.library__tittle__arrow__icons a{
+    color: #b3b3b3;
+    text-decoration: none;
+    display: grid;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: -17px;
+    scale: 120%;
+}
+
+.sidebar__library .button__gray__background{
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    width: 80px;
+    height: 34px;
+}
+
+.sidebar__library .playlists__button{
+    position: absolute;
+    top: 45px;
+    left: 5px;
+}
+
+.sidebar__library .artists__button{
+    position: absolute;
+    top: 45px;
+    left: 95px;
+}
+
+.sidebar__library .albums__button{
+    position: relative;
+    top: 13px;
+    left: 160px;
+}
+
+
+.button__tittle a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+.sidebar__library .search__icon a{
+    color: #b3b3b3;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    left: -10px;
+}
+
