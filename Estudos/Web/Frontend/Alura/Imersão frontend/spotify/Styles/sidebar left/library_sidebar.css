@@ -11,9 +11,10 @@
 .sidebar__library .library__tittle a{
     color: #b3b3b3;
     text-decoration: none;
-  
     font-weight: 580;
     font-size: 20px;
+    position: relative;
+    top: 6px;
     font-family: "DM Sans", sans-serif;
     
     
@@ -25,6 +26,7 @@
     display: grid;
     position: absolute;
     margin-left: 190px;
+    top: 40px;
     margin-top: -17px;
 }
 
@@ -35,6 +37,7 @@
     position: absolute;
     margin-left: 230px;
     margin-top: -17px;
+    top: 40px;
     scale: 120%;
 }
 
@@ -44,25 +47,25 @@
     align-items: center;
     justify-content: center;
     border-radius: 80px;
-    width: 80px;
-    height: 34px;
+    width: 70px;
+    height: 28px;
 }
 
 .sidebar__library .playlists__button{
     position: absolute;
-    top: 45px;
-    left: 5px;
+    top: 60px;
+    left: 20px;
 }
 
 .sidebar__library .artists__button{
     position: absolute;
-    top: 45px;
-    left: 95px;
+    top: 60px;
+    left: 103px;
 }
 
 .sidebar__library .albums__button{
     position: relative;
-    top: 13px;
+    top: 27px;
     left: 160px;
 }
 
@@ -72,14 +75,54 @@
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
     font-weight: 550;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .sidebar__library .search__icon a{
     color: #b3b3b3;
     text-decoration: none;
     position: relative;
-    top: 35px;
+    top: 45px;
     left: -10px;
 }
 
+.recent a{
+    color: #b3b3b3;
+    text-decoration: none;
+    position: relative;
+    left: 170px;
+    top: 29px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+.playlists__1 img{
+    scale: 4%;
+    position: relative;
+    left: -650px;
+    top: -595px;
+}
+.playlists__1 .playlist__text{
+    color: #fff;
+    position: relative;
+    top: -1253px;
+    left: 25px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 550;
+    font-size: 17px;
+}
+
+.playlist__subtext .subtext__icon{
+    color: #1DB954;
+    position: relative;
+    top: -1170px;
+    left: -5px;
+    transform: rotate(46deg);
+}
+
+.playlist__subtext .text{
+    position: relative;
+    top: -1262px;
+    left: 45px;
+}
