@@ -1,33 +1,4 @@
-const searchInput = document.getElementById('search-input');
-const resultArtist = document.getElementById("result-artist");
-const resultPlaylist = document.getElementById('result-playlists');
-
-
-function requestApi(searchTerm) {
-    const url = `http://localhost:3000/artists?name_like=${searchTerm}`
-
-    fetch(url)
-        .then((response) => response.json())
-        .then((result) => displayResults(result, searchTerm))
-
-
-
-}
-
-
-function displayResults(result, searchTerm) {
-    
-
-    const gridContainer = document.querySelector('.grid-container');
-    resultPlaylist.classList.add("hidden")
-   /* const artistName = document.getElementById('artist-name');
-    const artistImage = document.getElementById('artist-img');*/
-    gridContainer.innerHTML = '';   
-    
-    
-    const filteredArtists = result.filter(artist => artist.name.toLowerCase().includes(searchTerm));
-
-    if(filteredArtists.length === 0 ){
+if(filteredArtists.length === 0 ){
         const playlistsContainer = document.querySelector('.playlist-container');
         playlistsContainer.innerHTML = '';
         const artistCard = document.createElement('div');
@@ -36,14 +7,14 @@ function displayResults(result, searchTerm) {
                               <div class="notContentContainer">    
                         <span class="notContentTittle">Oops!</span>
                         <span class="notContentSubTittle">
-                           Artista Não encontrado.
+                           Artista Não encontrado
                         </span>
                     </div>
         `;
         playlistsContainer.appendChild(artistCard);
         
     }else{
-    
+        playlistsContainer.innerHTML = '';
     filteredArtists.forEach(artist => {
         const artistCard = document.createElement('div');
         artistCard.classList.add('artistCard');
@@ -70,14 +41,3 @@ function displayResults(result, searchTerm) {
 
     resultArtist.classList.remove('hidden');
     }
-}
-
-document.addEventListener('input', function () {
-   const searchTerm = searchInput.value.toLowerCase().trim();
-   if(searchTerm === ''){
-    resultPlaylist.classList.remove('hidden');
-    resultArtist.classList.add('hidden');
-    return;
-   }
-   requestApi(searchTerm);
-})
