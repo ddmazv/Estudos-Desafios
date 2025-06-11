@@ -23,14 +23,8 @@ Este eBook ensina como usar estruturas condicionais em Java (como `if`, `else`, 
 - Estudantes de programação
 - Fãs de games que querem aprender a programar de forma divertida
 
-## 🚀 Como usar este repositório
-
-Explore os diretórios por capítulo para ver os exemplos de código. Você pode rodá-los localmente no seu ambiente Java preferido, adaptá-los, ou até criar suas próprias versões!
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Se você quiser adicionar exemplos, correções ou melhorias, fique à vontade para abrir um pull request.
-
+## 💭 Link com os prompts usados para criar as imagens:
+- [Ver prompts](https://copilot.microsoft.com/shares/Zob4EZ5dvckzgebXCrbWN)
 ---
 
 **Vamos juntos desbloquear o conhecimento com a lógica dos games!**
