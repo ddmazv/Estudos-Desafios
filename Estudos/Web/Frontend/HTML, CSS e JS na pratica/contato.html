@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contato</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <script type="text/javascript">
+        function confirmarEnvio(){
+            if(confirm("Você realmete deseja enviar uma messagem?")){
+                alert("o formulario foi enviado");
+                return true;
+            }else{
+                alert("o formulario não foi enviado");
+            }
+        }
+        function chamarFuncao(){
+            var elemtentoTextoDinamico = document.getElementById("textoDinamico");
+            elemtentoTextoDinamico.innerText = "Ola!";
+            for(i = 0; i<10; i++){
+                elemtentoTextoDinamico.innerText += i;
+            }
+
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h1 >Bem vindo a pagina de Contato</h1><br>
+
+    <form method="GET" action="contato.html" onsubmit="return confirmarEnvio()">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div>
+        <label for="msg">menssagem</label>
+        <textarea name="msg" id=""></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Enviar menssagem">
+    </div>
+    </form>
+    <div class="botao">
+    <a href="index.html">Voltar</a>
+    </div>
+
+    <div id="textoDinamico"></div>
+
+    <button onclick="chamarFuncao()">Olá</button>
+
+</body>
+</html>

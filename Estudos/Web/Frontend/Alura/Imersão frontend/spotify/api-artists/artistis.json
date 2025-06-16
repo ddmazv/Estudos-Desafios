@@ -1,0 +1,91 @@
+{
+    "artists": [
+      {
+        "id": 1,
+        "name": "Foo Fighters",
+        "genre": "Rock",
+        "urlImg": "https://i.scdn.co/image/ab67616100005174c884df599abc793c116cdf15"
+      },
+      {
+        "id": 2,
+        "name": "Michael Jackson",
+        "genre": "Pop",
+        "urlImg": "https://i.scdn.co/image/ab676161000051740e08ea2c4d6789fbf5cbe0aa"
+      },
+      {
+        "id": 3,
+        "name": "Emicida",
+        "genre": "Hip Hop",
+        "urlImg": "https://i.scdn.co/image/ab67616100005174908b4b4bc90e1518b68b4068"
+      },
+      {
+        "id": 4,
+        "name": "Chitãozinho e Xororó",
+        "genre": "Sertanejo",
+        "urlImg": "https://i.scdn.co/image/ab676161000051744606c59411c57f7b49588be4"
+      },
+      {
+        "id": 5,
+        "name": "Mc Coringa",
+        "genre": "Funk",
+        "urlImg": "https://i.scdn.co/image/ab67616d00001e02fe8f6dd361ad0f12b88c7f56"
+      },
+      {
+        "id": 6,
+        "name": "Arlindo Cruz",
+        "genre": "Samba",
+        "urlImg": "https://i.scdn.co/image/ab67616100005174181873f93056642d7b340839"
+      },
+      {
+        "id": 7,
+        "name": "Caetano Veloso",
+        "genre": "MPB",
+        "urlImg": "https://i.scdn.co/image/ab67616100005174e98de50f36cf1aa4bf047757"
+      },{
+        "id": 8,
+        "name": "Jean Tassy",
+        "genre": "MPB",
+        "urlImg": "https://lh3.googleusercontent.com/L6r-IwJtoYIoB5-fc-kU7n9vJZi4nX5ia8YfbLWWNwR8-mM495kQyBEsMWfBk9n_iH2PCzEdNJvd7t0f=w544-h544-l90-rj"
+      },{
+        "id": 9,
+        "name": "Matue",
+        "genre": "Trap",
+        "urlImg": "https://i.scdn.co/image/ab67616100005174654dc6b69f86aeb73527fc07"
+      },{
+        "id": 10,
+        "name": "BrunãoMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339371661626966056/Imagem_do_WhatsApp_de_2025-02-12_as_20.02.18_d062bc98.jpg?ex=67ae7a90&is=67ad2910&hm=884afa263db3f855a825f5ff09594d3126790227f3efa2c1967634cc9e91cc4d&=&format=webp&width=350&height=350"
+      },{
+        "id": 11,
+        "name": "constanttMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339372862208737291/DSC00408.JPG?ex=67ae7bae&is=67ad2a2e&hm=d47226734c5f06a0b92833fb5c406c8bf6421ad9be0d73feca532b2d41acd29b&=&format=webp&width=466&height=350"
+      },{
+        "id": 12,
+        "name": "dudãoMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339374378562879629/994509_1388971694655311_691642145_n.jpg?ex=67ae7d18&is=67ad2b98&hm=2eda8fd49d9a256c9c36ab61e2d3fe58f4c75591aabb6161253b79ac82113a83&=&format=webp&width=442&height=589"
+      },{
+        "id": 13,
+        "name": "indiãoMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339374903123771493/Imagem_do_WhatsApp_de_2024-09-08_as_16.48.34_c3da4024.jpg?ex=67ae7d95&is=67ad2c15&hm=f5d89cfa019d77272a6372ecc88c5523633dd8a64dc04dd4eb8083619e41982b&=&format=webp"
+      },{
+        "id": 14,
+        "name": "MexelMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339375252290928710/Imagem_do_WhatsApp_de_2025-02-12_as_20.18.51_155c1ace.jpg?ex=67ae7de8&is=67ad2c68&hm=79ee207283510c9b709cd096af6d6345b006cc80b415a16142e58f0dc9d3cadb&=&format=webp"
+      },{
+        "id": 15,
+        "name": "VitolaMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339375535213514843/05777f5d-2a3e-485c-98e9-cf32e6b5898b.webp?ex=67ae7e2b&is=67ad2cab&hm=fdf1000b033a754f4be635d87a3b564b81080ffaa4307eafba18f7af7bcf1bba&=&format=webp&width=350&height=350"
+      },{
+        "id": 16,
+        "name": "LukitasMC",
+        "genre": "Gay",
+        "urlImg": "https://media.discordapp.net/attachments/783725819369488425/1339376153445535866/Imagem_do_WhatsApp_de_2025-01-29_as_21.16.44_72d6ca27.jpg?ex=67ae7ebf&is=67ad2d3f&hm=7686a7198555cca9b087b7e120680d4bf9a363e6159f39f2cdbbd9a74ad71b4d&=&format=webp&width=263&height=350"
+      }
+    ]
+  }

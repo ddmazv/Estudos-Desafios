@@ -1,0 +1,4 @@
+**/node_modules/
+**/testbackend/envProps.py
+**/src/envProps.ts
+**/resources/application.properties

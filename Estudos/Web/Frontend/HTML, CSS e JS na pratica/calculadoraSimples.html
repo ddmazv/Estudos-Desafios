@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+   
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+
+    <!--<form>-->
+        Valor 1: <input type="text" id="valor1" name="valor1"/><br>
+        Operador: <select id="operador">
+                            <option value="somar">Somar</option>
+                            <option value="subtrair">Subtrair</option>
+                            <option value="multipicar">Multiplicar</option>
+                            <option value="dividir">Dividir</option>
+                </select><br>
+        Valor2: <input type="text" id="valor2" name="valor2"><br>
+        <button onclick="calcular()">Calcular</button>                
+        <div id="result"></div>
+    <!--</form> -->
+    <script type="text/javascript">
+        function calcular(){
+            var valor1 = document.getElementById("valor1");
+            var valor2 = document.getElementById("valor2");
+            var operador = document.getElementById("operador");
+            var opSelecionada = operador.options[operador.selectedIndex].value;
+        
+            
+            console.log(valor1.value);
+            console.log(valor2.value);
+            console.log(opSelecionada);
+            var resultado;
+            switch(opSelecionada){
+                case("somar"):{
+            
+                    resultado = parseFloat(valor1.value) +parseFloat(valor2.value);
+                    break;
+                }
+                case("subtrair"):{
+                    resultado = parseFloat(valor1.value) -parseFloat(valor2.value);
+                    break;
+                }
+                case("multipicar"):{
+                    resultado = parseFloat(valor1.value) *parseFloat(valor2.value);
+                    break;
+                }
+                case("dividir"):{
+                    resultado = parseFloat(valor1.value) /parseFloat(valor2.value);
+                    break;
+                }
+            }
+      
+        var divResul = document.getElementById("result");
+       divResul.innerText = resultado;
+      
+        }
+    </script>
+</body>
+</html>
