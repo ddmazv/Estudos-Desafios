@@ -1,0 +1,77 @@
+package br.com.dio.persistence;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+
+public class IOFilePersistence implements FilePersistence {
+
+	private final String currentDir = System.getProperty("user.dir");
+	private final String storageDir = "/managedFiles/IO/";
+	private final String fileName;
+
+	public IOFilePersistence(String filename) throws IOException {
+		this.fileName = filename;
+		var file = new File(currentDir + storageDir);
+		if (!file.exists() && !file.mkdirs())
+			throw new IOException("Erro ao criar arquivo");
+		clearFile();
+
+	}
+
+	@Override
+	public String write(String data) {
+		try (
+				var fileWriter = new FileWriter(currentDir + storageDir + fileName, true);
+				var bufferedWeite = new BufferedWriter(fileWriter);
+				var printWriter = new PrintWriter(bufferedWeite); 
+		){
+			printWriter.println(data);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		
+		return data;
+	}
+
+	@Override
+	public boolean removeContent(String sentence) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public String replace(String oldContent, String newContent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String findBy(String sentence) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private void clearFile() {
+		try {
+			OutputStream outputStream = new FileOutputStream(new File(currentDir + storageDir + fileName));
+			outputStream.close();
+			System.out.println("Arquivo criado em: " +currentDir + storageDir + fileName);
+			
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+	}
+
+	
+}
