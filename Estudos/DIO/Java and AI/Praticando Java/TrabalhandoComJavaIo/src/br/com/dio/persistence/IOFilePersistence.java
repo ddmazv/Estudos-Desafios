@@ -1,8 +1,10 @@
 package br.com.dio.persistence;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -25,16 +27,14 @@ public class IOFilePersistence implements FilePersistence {
 
 	@Override
 	public String write(String data) {
-		try (
-				var fileWriter = new FileWriter(currentDir + storageDir + fileName, true);
+		try (var fileWriter = new FileWriter(currentDir + storageDir + fileName, true);
 				var bufferedWeite = new BufferedWriter(fileWriter);
-				var printWriter = new PrintWriter(bufferedWeite); 
-		){
+				var printWriter = new PrintWriter(bufferedWeite);) {
 			printWriter.println(data);
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
-		
+
 		return data;
 	}
 
@@ -52,26 +52,48 @@ public class IOFilePersistence implements FilePersistence {
 
 	@Override
 	public String findAll() {
-		// TODO Auto-generated method stub
-		return null;
+		var content = new StringBuilder();
+		try (var reader = new BufferedReader(new FileReader(currentDir + storageDir + fileName))) {
+			String line;
+			do {
+				line = reader.readLine();
+				if (line != null) {
+					content.append(line).append(System.lineSeparator());
+				}
+			} while (line != null);
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return content.toString();
 	}
 
 	@Override
 	public String findBy(String sentence) {
-		// TODO Auto-generated method stub
-		return null;
+		String found ="";
+		try (var reader = new BufferedReader(new FileReader(currentDir + storageDir + fileName))) {
+			String line = reader.readLine();
+			while(line != null){
+				if(line.contains(sentence)) {
+					found = line;
+					break;
+				}
+			}
+			line = reader.readLine();
+		} catch (IOException ex) {
+			ex.printStackTrace();
+		}
+		return found;
 	}
 
 	private void clearFile() {
 		try {
 			OutputStream outputStream = new FileOutputStream(new File(currentDir + storageDir + fileName));
 			outputStream.close();
-			System.out.println("Arquivo criado em: " +currentDir + storageDir + fileName);
-			
+			System.out.println("Arquivo criado em: " + currentDir + storageDir + fileName);
+
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
 	}
 
-	
 }
