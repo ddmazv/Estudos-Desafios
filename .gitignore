@@ -3,3 +3,4 @@
 **/src/envProps.ts
 **/resources/application.properties
 **/__pycache__
+**/venv
